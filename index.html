@@ -1,126 +1,899 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho - Sustentabilidade na Agricultura</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Futuro - Programa Agrinho 2026</title>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Tela de Carregamento -->
-    <div id="loading-screen">
-        <div class="loader"></div>
-        <h2>Carregando Projeto Agrinho...</h2>
+  <div id="loading-screen">
+    <div class="loader-content">
+
+      <div class="plant-loader">
+        <div class="soil"></div>
+        <div class="stem"></div>
+        <div class="leaf leaf-left"></div>
+        <div class="leaf leaf-right"></div>
+        <div class="leaf leaf-top"></div>
+      </div>
+
+      <h2
+        data-pt="Raízes do Futuro"
+        data-en="Roots of the Future">
+        Raízes do Futuro
+      </h2>
+
+      <p
+        data-pt="Preparando sua jornada pelo futuro da agricultura..."
+        data-en="Preparing your journey into the future of agriculture...">
+        Preparando sua jornada pelo futuro da agricultura...
+      </p>
+
+    </div>
+  </div>
+
+  <section id="welcome-screen">
+
+    <div class="welcome-overlay"></div>
+
+    <div class="welcome-content">
+
+      <span
+        class="welcome-badge"
+        data-pt="🌾 Programa Agrinho 2026"
+        data-en="🌾 Agrinho Program 2026">
+        🌾 Programa Agrinho 2026
+      </span>
+
+      <h1
+        data-pt="Raízes do Futuro"
+        data-en="Roots of the Future">
+        Raízes do Futuro
+      </h1>
+
+      <p
+        data-pt="Conheça como a sustentabilidade está transformando a agricultura do Paraná e garantindo um futuro melhor para as próximas gerações."
+        data-en="Discover how sustainability is transforming agriculture in Paraná and ensuring a better future for future generations.">
+        Conheça como a sustentabilidade está transformando a agricultura do Paraná e garantindo um futuro melhor para as próximas gerações.
+      </p>
+
+      <button
+        id="enterBtn"
+        data-pt="Entrar na Experiência"
+        data-en="Enter the Experience">
+        Entrar na Experiência
+      </button>
+
     </div>
 
-    <!-- Tela de Entrada -->
-    <section id="login-screen">
+  </section>
 
-        <div class="background-overlay"></div>
+  <main id="main-content">
 
-        <div class="login-box">
-            <h1>Projeto Agrinho</h1>
-            <h2>Sustentabilidade na Agricultura</h2>
+  <nav id="navbar">
 
-            <input type="text" placeholder="Seu nome">
+    <div class="logo-area">
 
-            <button id="enterBtn">Entrar</button>
+      <span class="logo-icon">🌾</span>
+
+      <span class="logo-text">
+        RAÍZES DO FUTURO
+      </span>
+
+    </div>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#sobre"
+           data-pt="Sobre"
+           data-en="About">
+           Sobre
+        </a>
+      </li>
+
+      <li>
+        <a href="#timeline"
+           data-pt="História"
+           data-en="History">
+           História
+        </a>
+      </li>
+
+      <li>
+        <a href="#pilares"
+           data-pt="Pilares"
+           data-en="Pillars">
+           Pilares
+        </a>
+      </li>
+
+      <li>
+        <a href="#tecnologias"
+           data-pt="Tecnologias"
+           data-en="Technologies">
+           Tecnologias
+        </a>
+      </li>
+
+      <li>
+        <a href="#game-section"
+           data-pt="Minigame"
+           data-en="Minigame">
+           Minigame
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="nav-actions">
+
+      <div class="accessibility-buttons">
+
+        <button id="decreaseText">
+          A-
+        </button>
+
+        <button id="increaseText">
+          A+
+        </button>
+
+        <button id="contrastBtn">
+          🌓
+        </button>
+
+      </div>
+
+      <button id="translateBtn">
+        🇧🇷 PT | 🇺🇸 EN
+      </button>
+
+    </div>
+
+  </nav>
+
+  <header class="hero-section">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-content fade-up">
+
+      <span
+        class="hero-tag"
+        data-pt="AGRINHO 2026"
+        data-en="AGRINHO 2026">
+        AGRINHO 2026
+      </span>
+
+      <h1
+        data-pt="Sustentabilidade na Agricultura"
+        data-en="Sustainability in Agriculture">
+        Sustentabilidade na Agricultura
+      </h1>
+
+      <p
+        data-pt="Produzir mais, preservar melhor e garantir alimento para as próximas gerações."
+        data-en="Produce more, preserve better and ensure food for future generations.">
+        Produzir mais, preservar melhor e garantir alimento para as próximas gerações.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#sobre"
+           class="primary-btn"
+           data-pt="Explorar Projeto"
+           data-en="Explore Project">
+           Explorar Projeto
+        </a>
+
+        <a href="#game-section"
+           class="secondary-btn"
+           data-pt="Jogar Minigame"
+           data-en="Play Minigame">
+           Jogar Minigame
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="stats-section">
+
+    <div class="stat-card fade-up">
+
+      <h3 class="counter" data-target="75">0</h3>
+
+      <p
+        data-pt="% da água doce utilizada pela agricultura"
+        data-en="% of freshwater used by agriculture">
+        % da água doce utilizada pela agricultura
+      </p>
+
+    </div>
+
+    <div class="stat-card fade-up">
+
+      <h3 class="counter" data-target="100">0</h3>
+
+      <p
+        data-pt="Anos para recuperação natural do solo"
+        data-en="Years for natural soil recovery">
+        Anos para recuperação natural do solo
+      </p>
+
+    </div>
+
+    <div class="stat-card fade-up">
+
+      <h3 class="counter" data-target="60">0</h3>
+
+      <p
+        data-pt="% de economia com irrigação eficiente"
+        data-en="% savings with efficient irrigation">
+        % de economia com irrigação eficiente
+      </p>
+
+    </div>
+
+    <div class="stat-card fade-up">
+
+      <h3 class="counter" data-target="2030">0</h3>
+
+      <p
+        data-pt="Meta global para desenvolvimento sustentável"
+        data-en="Global sustainable development target">
+        Meta global para desenvolvimento sustentável
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="sobre" class="about-section fade-up">
+
+    <div class="section-title">
+
+      <span
+        data-pt="DOCUMENTO OFICIAL"
+        data-en="OFFICIAL DOCUMENT">
+        DOCUMENTO OFICIAL
+      </span>
+
+      <h2
+        data-pt="Sobre o Projeto"
+        data-en="About the Project">
+        Sobre o Projeto
+      </h2>
+
+    </div>
+
+    <div class="project-card">
+
+      <div class="project-seal">
+        🌾
+      </div>
+
+      <div class="project-info">
+
+        <h3
+          data-pt="Programa Agrinho 2026"
+          data-en="Agrinho Program 2026">
+          Programa Agrinho 2026
+        </h3>
+
+        <hr>
+
+        <div class="student-info">
+
+          <div>
+            <strong
+              data-pt="Aluno:"
+              data-en="Student:">
+              Aluno:
+            </strong>
+            Seu Nome
+          </div>
+
+          <div>
+            <strong
+              data-pt="Escola:"
+              data-en="School:">
+              Escola:
+            </strong>
+            Sua Escola
+          </div>
+
+          <div>
+            <strong
+              data-pt="Turma:"
+              data-en="Class:">
+              Turma:
+            </strong>
+            Sua Turma
+          </div>
+
         </div>
 
-    </section>
+        <p
+          data-pt="Este projeto apresenta práticas sustentáveis capazes de aumentar a produtividade agrícola enquanto preservam o meio ambiente."
+          data-en="This project presents sustainable practices capable of increasing agricultural productivity while preserving the environment.">
+          Este projeto apresenta práticas sustentáveis capazes de aumentar a produtividade agrícola enquanto preservam o meio ambiente.
+        </p>
 
-    <!-- Conteúdo Principal -->
-    <main id="main-content">
+      </div>
 
-        <header>
-            <h1>Sustentabilidade na Agricultura</h1>
-            <p>
-                Produzir alimentos de qualidade preservando os recursos naturais
-                para as futuras gerações.
-            </p>
-        </header>
+    </div>
 
-        <section class="intro">
-            <h2>O que é Agricultura Sustentável?</h2>
+  </section>
 
-            <p>
-                A agricultura sustentável busca equilibrar produção agrícola,
-                preservação ambiental e desenvolvimento econômico. Seu objetivo é
-                garantir alimentos suficientes sem comprometer os recursos naturais.
-            </p>
-        </section>
+  <section id="timeline" class="timeline-section">
 
-        <section class="cards">
+    <div class="section-title">
 
-            <!-- Pilar 1 -->
-            <div class="card">
-                <div class="image-placeholder">
-                    IMAGEM SOBRE ECONOMIA DE ÁGUA
-                </div>
+      <span
+        data-pt="EVOLUÇÃO AGRÍCOLA"
+        data-en="AGRICULTURAL EVOLUTION">
+        EVOLUÇÃO AGRÍCOLA
+      </span>
 
-                <h3>💧 Economia de Água</h3>
+      <h2
+        data-pt="Linha do Tempo da Sustentabilidade"
+        data-en="Sustainability Timeline">
+        Linha do Tempo da Sustentabilidade
+      </h2>
 
-                <p>
-                    A utilização consciente da água reduz desperdícios e garante
-                    recursos para futuras gerações. Sistemas de irrigação modernos
-                    ajudam a economizar grandes quantidades de água.
-                </p>
+    </div>
 
-                <a href="#" target="_blank">
-                    Saiba Mais
-                </a>
-            </div>
+    <div class="timeline">
 
-            <!-- Pilar 2 -->
-            <div class="card">
-                <div class="image-placeholder">
-                    IMAGEM SOBRE SOLO SAUDÁVEL
-                </div>
+      <div class="timeline-item fade-up">
 
-                <h3>🌱 Solo Saudável</h3>
+        <div class="timeline-year">
+          1950
+        </div>
 
-                <p>
-                    A preservação do solo mantém nutrientes importantes para as
-                    plantações. Técnicas como rotação de culturas e cobertura
-                    vegetal ajudam a evitar erosão.
-                </p>
+        <div class="timeline-content">
 
-                <a href="#" target="_blank">
-                    Saiba Mais
-                </a>
-            </div>
+          <h3
+            data-pt="Agricultura Convencional"
+            data-en="Conventional Agriculture">
+            Agricultura Convencional
+          </h3>
 
-            <!-- Pilar 3 -->
-            <div class="card">
-                <div class="image-placeholder">
-                    IMAGEM SOBRE TECNOLOGIA
-                </div>
+          <p
+            data-pt="Expansão agrícola com foco na produtividade."
+            data-en="Agricultural expansion focused on productivity.">
+            Expansão agrícola com foco na produtividade.
+          </p>
 
-                <h3>🚜 Tecnologia</h3>
+        </div>
 
-                <p>
-                    Sensores, drones e inteligência artificial permitem monitorar
-                    lavouras, reduzindo desperdícios e aumentando a produtividade
-                    de forma sustentável.
-                </p>
+      </div>
 
-                <a href="#" target="_blank">
-                    Saiba Mais
-                </a>
-            </div>
+      <div class="timeline-item fade-up">
 
-        </section>
+        <div class="timeline-year">
+          1970
+        </div>
 
-        <footer>
-            <p>
-                Projeto Agrinho 2026 | Sustentabilidade na Agricultura
-            </p>
-        </footer>
+        <div class="timeline-content">
 
-    </main>
+          <h3
+            data-pt="Consciência Ambiental"
+            data-en="Environmental Awareness">
+            Consciência Ambiental
+          </h3>
 
-    <script src="script.js"></script>
+          <p
+            data-pt="Crescimento das discussões sobre preservação ambiental."
+            data-en="Growth of discussions about environmental preservation.">
+            Crescimento das discussões sobre preservação ambiental.
+          </p>
 
+        </div>
+
+      </div>
+
+      <div class="timeline-item fade-up">
+
+        <div class="timeline-year">
+          1990
+        </div>
+
+        <div class="timeline-content">
+
+          <h3
+            data-pt="Plantio Direto"
+            data-en="No-Till Farming">
+            Plantio Direto
+          </h3>
+
+          <p
+            data-pt="Redução da erosão e conservação do solo."
+            data-en="Reduction of erosion and soil conservation.">
+            Redução da erosão e conservação do solo.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="intro-section fade-up">
+
+    <div class="section-title">
+
+      <span
+        data-pt="CONCEITO"
+        data-en="CONCEPT">
+        CONCEITO
+      </span>
+
+      <h2
+        data-pt="O que é Agricultura Sustentável?"
+        data-en="What is Sustainable Agriculture?">
+        O que é Agricultura Sustentável?
+      </h2>
+
+    </div>
+
+    <div class="intro-container">
+
+      <div class="intro-text">
+
+        <p
+          data-pt="A agricultura sustentável busca equilibrar produção, preservação ambiental e desenvolvimento social."
+          data-en="Sustainable agriculture seeks to balance production, environmental preservation and social development.">
+          A agricultura sustentável busca equilibrar produção, preservação ambiental e desenvolvimento social.
+        </p>
+
+        <p
+          data-pt="Seu objetivo é garantir alimentos sem comprometer os recursos das futuras gerações."
+          data-en="Its goal is to provide food without compromising the resources of future generations.">
+          Seu objetivo é garantir alimentos sem comprometer os recursos das futuras gerações.
+        </p>
+
+      </div>
+
+      <div class="intro-image">
+        🌱
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="pilares" class="pillars-section">
+
+    <div class="section-title">
+
+      <span
+        data-pt="PRÁTICAS SUSTENTÁVEIS"
+        data-en="SUSTAINABLE PRACTICES">
+        PRÁTICAS SUSTENTÁVEIS
+      </span>
+
+      <h2
+        data-pt="Os Pilares da Agricultura Sustentável"
+        data-en="The Pillars of Sustainable Agriculture">
+        Os Pilares da Agricultura Sustentável
+      </h2>
+
+    </div>
+
+    <div class="pillars-grid">
+
+      <div class="pillar-card fade-up">
+
+        <div class="pillar-icon">💧</div>
+
+        <h3
+          data-pt="Gestão Inteligente da Água"
+          data-en="Smart Water Management">
+          Gestão Inteligente da Água
+        </h3>
+
+        <p
+          data-pt="A irrigação por gotejamento e o reaproveitamento da água reduzem desperdícios e aumentam a eficiência da produção."
+          data-en="Drip irrigation and water reuse reduce waste and increase production efficiency.">
+          A irrigação por gotejamento e o reaproveitamento da água reduzem desperdícios e aumentam a eficiência da produção.
+        </p>
+
+      </div>
+
+      <div class="pillar-card fade-up">
+
+        <div class="pillar-icon">🌱</div>
+
+        <h3
+          data-pt="Conservação do Solo"
+          data-en="Soil Conservation">
+          Conservação do Solo
+        </h3>
+
+        <p
+          data-pt="O plantio direto e a rotação de culturas ajudam a preservar nutrientes e reduzir a erosão."
+          data-en="No-till farming and crop rotation help preserve nutrients and reduce erosion.">
+          O plantio direto e a rotação de culturas ajudam a preservar nutrientes e reduzir a erosão.
+        </p>
+
+      </div>
+
+      <div class="pillar-card fade-up">
+
+        <div class="pillar-icon">🐞</div>
+
+        <h3
+          data-pt="Controle Biológico"
+          data-en="Biological Control">
+          Controle Biológico
+        </h3>
+
+        <p
+          data-pt="O uso de inimigos naturais das pragas reduz a necessidade de pesticidas químicos."
+          data-en="The use of natural pest enemies reduces the need for chemical pesticides.">
+          O uso de inimigos naturais das pragas reduz a necessidade de pesticidas químicos.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="tecnologias" class="technologies-section">
+
+    <div class="section-title">
+
+      <span
+        data-pt="INOVAÇÃO"
+        data-en="INNOVATION">
+        INOVAÇÃO
+      </span>
+
+      <h2
+        data-pt="Tecnologias Sustentáveis"
+        data-en="Sustainable Technologies">
+        Tecnologias Sustentáveis
+      </h2>
+
+    </div>
+
+    <div class="technology-grid">
+
+      <div class="tech-card fade-up">
+
+        <div class="tech-icon">🚁</div>
+
+        <h3
+          data-pt="Drones Agrícolas"
+          data-en="Agricultural Drones">
+          Drones Agrícolas
+        </h3>
+
+        <p
+          data-pt="Monitoram lavouras, detectam falhas e ajudam a reduzir desperdícios."
+          data-en="They monitor crops, detect failures and help reduce waste.">
+          Monitoram lavouras, detectam falhas e ajudam a reduzir desperdícios.
+        </p>
+
+      </div>
+
+      <div class="tech-card fade-up">
+
+        <div class="tech-icon">📡</div>
+
+        <h3
+          data-pt="Sensores Inteligentes"
+          data-en="Smart Sensors">
+          Sensores Inteligentes
+        </h3>
+
+        <p
+          data-pt="Coletam informações em tempo real sobre solo, umidade e clima."
+          data-en="They collect real-time information about soil, humidity and climate.">
+          Coletam informações em tempo real sobre solo, umidade e clima.
+        </p>
+
+      </div>
+
+      <div class="tech-card fade-up">
+
+        <div class="tech-icon">🤖</div>
+
+        <h3
+          data-pt="Inteligência Artificial"
+          data-en="Artificial Intelligence">
+          Inteligência Artificial
+        </h3>
+
+        <p
+          data-pt="Ajuda produtores a tomar decisões mais eficientes e sustentáveis."
+          data-en="Helps farmers make more efficient and sustainable decisions.">
+          Ajuda produtores a tomar decisões mais eficientes e sustentáveis.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="gallery-section">
+
+    <div class="section-title">
+
+      <span
+        data-pt="IMAGENS"
+        data-en="IMAGES">
+        IMAGENS
+      </span>
+
+      <h2
+        data-pt="Agricultura Sustentável em Ação"
+        data-en="Sustainable Agriculture in Action">
+        Agricultura Sustentável em Ação
+      </h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="facts-section">
+
+    <div class="section-title">
+
+      <span
+        data-pt="VOCÊ SABIA?"
+        data-en="DID YOU KNOW?">
+        VOCÊ SABIA?
+      </span>
+
+      <h2
+        data-pt="Curiosidades"
+        data-en="Interesting Facts">
+        Curiosidades
+      </h2>
+
+    </div>
+
+    <div class="facts-grid">
+
+      <div class="fact-card fade-up">
+
+        🌎
+
+        <h3
+          data-pt="Produção Mundial"
+          data-en="Global Production">
+          Produção Mundial
+        </h3>
+
+        <p
+          data-pt="Mais de 95% dos alimentos dependem diretamente do solo."
+          data-en="More than 95% of food depends directly on soil.">
+          Mais de 95% dos alimentos dependem diretamente do solo.
+        </p>
+
+      </div>
+
+      <div class="fact-card fade-up">
+
+        💦
+
+        <h3
+          data-pt="Economia de Água"
+          data-en="Water Savings">
+          Economia de Água
+        </h3>
+
+        <p
+          data-pt="A irrigação por gotejamento pode economizar até 60% de água."
+          data-en="Drip irrigation can save up to 60% of water.">
+          A irrigação por gotejamento pode economizar até 60% de água.
+        </p>
+
+      </div>
+
+      <div class="fact-card fade-up">
+
+        🌱
+
+        <h3
+          data-pt="Solo Saudável"
+          data-en="Healthy Soil">
+          Solo Saudável
+        </h3>
+
+        <p
+          data-pt="Um solo saudável captura carbono e ajuda no combate às mudanças climáticas."
+          data-en="Healthy soil captures carbon and helps fight climate change.">
+          Um solo saudável captura carbono e ajuda no combate às mudanças climáticas.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="game-section" class="game-section">
+
+    <div class="section-title">
+
+      <span
+        data-pt="INTERATIVO"
+        data-en="INTERACTIVE">
+        INTERATIVO
+      </span>
+
+      <h2
+        data-pt="Recupere a Fazenda"
+        data-en="Recover the Farm">
+        Recupere a Fazenda
+      </h2>
+
+    </div>
+
+    <p class="game-description"
+       data-pt="Escolha uma ferramenta sustentável e transforme toda a área degradada antes que o tempo acabe."
+       data-en="Choose a sustainable tool and restore the degraded land before time runs out.">
+       Escolha uma ferramenta sustentável e transforme toda a área degradada antes que o tempo acabe.
+    </p>
+
+    <div class="game-toolbar">
+
+  <button
+  class="action-btn"
+  data-action="fertilizer"
+  data-pt="🌱 Plantio Direto"
+  data-en="🌱 No-Till Farming">
+  🌱 Plantio Direto
+  </button>
+
+  <button
+  class="action-btn"
+  data-action="water"
+  data-pt="💧 Gotejamento"
+  data-en="💧 Drip Irrigation">
+  💧 Gotejamento
+  </button>
+
+  <button
+  class="action-btn"
+  data-action="ladybug"
+  data-pt="🐞 Joaninhas"
+  data-en="🐞 Ladybugs">
+  🐞 Joaninhas
+  </button>
+
+    </div>
+
+    <div class="game-info">
+
+      <div class="game-stat">
+        <span id="progressText">0/25</span>
+      </div>
+
+      <div class="game-stat">
+        <span id="timerDisplay">60s</span>
+      </div>
+
+    </div>
+
+    <div id="gameGrid"></div>
+
+    <div id="gameMessage"></div>
+
+  </section>
+
+  <section class="conclusion-section">
+
+    <div class="conclusion-content fade-up">
+
+      <h2
+        data-pt="Construindo um Futuro Sustentável"
+        data-en="Building a Sustainable Future">
+        Construindo um Futuro Sustentável
+      </h2>
+
+      <p
+        data-pt="A sustentabilidade na agricultura é essencial para garantir alimento, preservar recursos naturais e melhorar a qualidade de vida das futuras gerações."
+        data-en="Sustainability in agriculture is essential to ensure food production, preserve natural resources and improve quality of life for future generations.">
+        A sustentabilidade na agricultura é essencial para garantir alimento, preservar recursos naturais e melhorar a qualidade de vida das futuras gerações.
+      </p>
+
+      <blockquote
+        data-pt="“Cuidar da terra hoje é garantir a colheita de amanhã.”"
+        data-en="“Taking care of the land today ensures tomorrow's harvest.”">
+        “Cuidar da terra hoje é garantir a colheita de amanhã.”
+      </blockquote>
+
+    </div>
+
+  </section>
+
+  <section class="credits-section">
+
+    <div class="credits-card fade-up">
+
+      <div class="credits-avatar">
+        👨‍🌾
+      </div>
+
+  <div class="credits-info">
+
+        <h3
+          data-pt="Informações do Projeto"
+          data-en="Project Information">
+          Informações do Projeto
+        </h3>
+
+        <p><strong data-pt="Aluno:" data-en="Student:">Aluno:</strong> Seu Nome</p>
+        <p><strong data-pt="Escola:" data-en="School:">Escola:</strong> Sua Escola</p>
+        <p><strong data-pt="Turma:" data-en="Class:">Turma:</strong> Sua Turma</p>
+        <p><strong data-pt="Ano:" data-en="Year:">Ano:</strong> 2026</p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="footer-content">
+
+      <h3
+        data-pt="Projeto Agrinho 2026"
+        data-en="Agrinho Project 2026">
+        Projeto Agrinho 2026
+      </h3>
+
+      <p
+        data-pt="Tecnologia, educação e sustentabilidade caminhando juntas."
+        data-en="Technology, education and sustainability working together.">
+        Tecnologia, educação e sustentabilidade caminhando juntas.
+      </p>
+
+      <div class="footer-line"></div>
+
+      <p
+        class="copyright"
+        data-pt="© 2026 - Todos os direitos reservados."
+        data-en="© 2026 - All rights reserved.">
+        © 2026 - Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
